@@ -80,14 +80,11 @@ WSGI_APPLICATION = 'smartkart.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'store',
-        'HOST': 'localhost',
-        'USER' : 'root',
-        'PASSWORD':'KAPIl@0477',
-        'PORT':''
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
 
 
 # Password validation
